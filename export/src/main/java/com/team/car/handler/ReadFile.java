@@ -48,6 +48,8 @@ public class ReadFile {
         String id = null;
         try {
             id = MessageSource.message("sheetColumn.id");
+
+            System.out.println("");
             String[] columns = MessageSource.message("sheetColumn").split("#");
             Row titleRow = rows.next();
             Iterator<Cell> cellIterator = titleRow.cellIterator();
